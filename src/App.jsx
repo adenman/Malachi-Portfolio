@@ -21,7 +21,7 @@ function App() {
     <ApolloProvider client={client}>
       <>
         <Nav />
-        <main className="flex-column justify-center align-center min-100-vh  mx-3" style={{ paddingTop: '80px' }}>
+        <main className="justify-center align-center" style={{ paddingTop: '80px' }}>
           <Outlet />
         </main>
         

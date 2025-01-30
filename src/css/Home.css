@@ -1,0 +1,78 @@
+.hero-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Update Hero-img style */
+  .Hero-img {
+    opacity: 50%;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Add positioning for the words-wrapper */
+  .words-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+  .words-wrapper .css {
+    color: #101aa0;
+  }
+  .words-wrapper .words {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    width: var(--width);
+    height: 45px;
+    margin-left: 5px;
+    color: var(--color, #a01010);
+    box-sizing: content-box;
+    transition: all 0.7s;
+  }
+  .words-wrapper .words span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -100%);
+    transition: transform 0.7s, opacity 0.25s 0.25s;
+  }
+  .words-wrapper .words span.current {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  .words-wrapper .words span.next {
+    transform: translate(-50%, 100%);
+  }
+  @media (max-width: 700px) {
+    .words-wrapper .words {
+      width: var(--width-mobile) !important;
+    }
+  }
+
+
+  .words-wrapper-2 {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .words-wrapper-2 li{
+    list-style-type: none;
+    display:inline-block;
+    margin-left: 80px;
+  }
