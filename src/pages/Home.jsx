@@ -43,23 +43,23 @@ function Home() {
         I am <span className="css">Malachi</span> I am a 
         <span className="words">
             <span className="current" data-bg-color="#ffc703" data-color="#000">Fashionista</span>
-            <span data-bg-color="#8cb369" data-color="#a01010">Photographer</span>
+            <span className="next" data-bg-color="#8cb369" data-color="#a01010">Photographer</span>
             <span data-bg-color="#104911" data-color="#a01010">Engineer</span>
             
-          </span>.
+          </span>
         </h1>
         <h3 className="words-wrapper-2">
           <ul>
             <li>
-              <a href="/findMe">Where to find me</a>
-              
+              {/* <a href="/findMe"></a> */}
+              Where to find me
             </li>
             <li>
-              dog
+              My work
             </li>
-            <li>
+            {/* <li>
               dog
-            </li>
+            </li> */}
           </ul>
           
         </h3>
