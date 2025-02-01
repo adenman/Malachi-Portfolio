@@ -41,6 +41,7 @@ function Home() {
       <img src="./positive-person.avif" alt="" className="Hero-img" />
       <h1 className="words-wrapper">
         I am <span className="css">Malachi</span> I am a 
+        {/* moving words */}
         <span className="words">
             <span className="current" data-bg-color="#ffc703" data-color="#000">Fashionista</span>
             <span className="next" data-bg-color="#8cb369" data-color="#a01010">Photographer</span>
@@ -51,15 +52,14 @@ function Home() {
         <h3 className="words-wrapper-2">
           <ul>
             <li>
-              {/* <a href="/findMe"></a> */}
-              Where to find me
+              <a href="/FindMe">Where to find me</a>
+              
             </li>
             <li>
-              My work
+            <a href="/MyWork">My work</a>
+              
             </li>
-            {/* <li>
-              dog
-            </li> */}
+            
           </ul>
           
         </h3>

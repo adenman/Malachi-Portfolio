@@ -1,17 +1,14 @@
 import ReactDOM from "react-dom/client";
-import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./css/index.css";
 
 import App from "./App";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
+import FindMe from "./pages/FindMe";
+import MyWork from "./pages/MyWork";
 
 
-const client = new ApolloClient({
-  uri: "http://localhost:3001/graphql", // Replace with your actual GraphQL API endpoint
-  cache: new InMemoryCache(),
-});
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
@@ -23,13 +20,21 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+      {
+        path: "/FindMe",
+        element: <FindMe />,
+      },
+      {
+        path: "/MyWork",
+        element: <MyWork />,
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <ApolloProvider client={client}>
+  
     <RouterProvider router={router} />
-  </ApolloProvider>
+  
 );
 
